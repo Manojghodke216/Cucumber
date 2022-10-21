@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Cucumber</td>
+                          <td>1</td>
+                        <td>04 Jul 2022, 14:42</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepdefenations.admin.Resetexam.click_reset_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="3123470500">3s 123ms</td>
+                <td class="duration" data-value="3123470500">3s 123ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.Resetexam.click_reset_exam_link()</td>
+                <td>1</td>
+                <td class="duration" data-value="3095421700">3s 095ms</td>
+                <td class="duration" data-value="3095421700">3s 095ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.Resetexam.enter_enrollment()</td>
+                <td>1</td>
+                <td class="duration" data-value="3139311600">3s 139ms</td>
+                <td class="duration" data-value="3139311600">3s 139ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.Resetexam.open_reset_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="3150243800">3s 150ms</td>
+                <td class="duration" data-value="3150243800">3s 150ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.Resetexam.select_subject()</td>
+                <td>1</td>
+                <td class="duration" data-value="6227639400">6s 227ms</td>
+                <td class="duration" data-value="6227639400">6s 227ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.adminLogin.admin_link()</td>
+                <td>1</td>
+                <td class="duration" data-value="2221885700">2s 221ms</td>
+                <td class="duration" data-value="2221885700">2s 221ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.adminLogin.admin_super_and_hjdhdh(java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3230879300">3s 230ms</td>
+                <td class="duration" data-value="3230879300">3s 230ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.adminLogin.click_on_login_for_admin_login()</td>
+                <td>1</td>
+                <td class="duration" data-value="3081854400">3s 081ms</td>
+                <td class="duration" data-value="3081854400">3s 081ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.adminLogin.enter_captcha_for_admin()</td>
+                <td>1</td>
+                <td class="duration" data-value="3803828800">3s 803ms</td>
+                <td class="duration" data-value="3803828800">3s 803ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.adminLogin.select_role()</td>
+                <td>1</td>
+                <td class="duration" data-value="1177510800">1s 177ms</td>
+                <td class="duration" data-value="1177510800">1s 177ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.allocate_exam.click_allocate_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="117998400">117ms</td>
+                <td class="duration" data-value="117998400">117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.allocate_exam.click_allocation_link()</td>
+                <td>1</td>
+                <td class="duration" data-value="3087821000">3s 087ms</td>
+                <td class="duration" data-value="3087821000">3s 087ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.allocate_exam.enter_student_enrollment()</td>
+                <td>1</td>
+                <td class="duration" data-value="3202041900">3s 202ms</td>
+                <td class="duration" data-value="3202041900">3s 202ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.allocate_exam.open_student_subject_allocation()</td>
+                <td>1</td>
+                <td class="duration" data-value="3152275000">3s 152ms</td>
+                <td class="duration" data-value="3152275000">3s 152ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.admin.allocate_exam.select_subject_for_allocation()</td>
+                <td>1</td>
+                <td class="duration" data-value="6275397400">6s 275ms</td>
+                <td class="duration" data-value="6275397400">6s 275ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.exam_process.click_final_end_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="994300">000ms</td>
+                <td class="duration" data-value="994300">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.exam_process.click_yes_to_end_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="950600">000ms</td>
+                <td class="duration" data-value="950600">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.exam_process.on_exam_page_select_option_a()</td>
+                <td>1</td>
+                <td class="duration" data-value="3126114400">3s 126ms</td>
+                <td class="duration" data-value="3126114400">3s 126ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.exam_process.on_last_question_click_end_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_exam.check_instructions()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_exam.click_proceed()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_exam.continue_exam()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_exam.search_subject_and_enter()</td>
+                <td>1</td>
+                <td class="duration" data-value="3172313100">3s 172ms</td>
+                <td class="duration" data-value="3172313100">3s 172ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.browser()</td>
+                <td>2</td>
+                <td class="duration" data-value="3478001900">3s 478ms</td>
+                <td class="duration" data-value="1739000950">1s 739ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.check_privacy_policy()</td>
+                <td>1</td>
+                <td class="duration" data-value="3144290500">3s 144ms</td>
+                <td class="duration" data-value="3144290500">3s 144ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.click_on_login()</td>
+                <td>1</td>
+                <td class="duration" data-value="3094580800">3s 094ms</td>
+                <td class="duration" data-value="3094580800">3s 094ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.enter_captcha()</td>
+                <td>1</td>
+                <td class="duration" data-value="3548148500">3s 548ms</td>
+                <td class="duration" data-value="3548148500">3s 548ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.enter_username_and_password(java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3273083100">3s 273ms</td>
+                <td class="duration" data-value="3273083100">3s 273ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_login.link()</td>
+                <td>1</td>
+                <td class="duration" data-value="2163382300">2s 163ms</td>
+                <td class="duration" data-value="2163382300">2s 163ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_logout.close_the_browser()</td>
+                <td>2</td>
+                <td class="duration" data-value="272761600">272ms</td>
+                <td class="duration" data-value="136380800">136ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefenations.student.student_logout.once_successfull_login_click_logout()</td>
+                <td>2</td>
+                <td class="duration" data-value="176019600">176ms</td>
+                <td class="duration" data-value="88009800">088ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>31</td>
+              <td>34</td>
+              <td class="duration">1m 13s 538ms</td>
+              <td class="duration">2s 162ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

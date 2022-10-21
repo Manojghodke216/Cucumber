@@ -1,0 +1,567 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-15T03:35:07.111Z",
+        "line": 14,
+        "name": "Gudexam Admin Login",
+        "description": "",
+        "id": "gudexams-functionality;gudexam-admin-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9245897900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser",
+            "match": {
+              "location": "stepdefenations.student.student_login.browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3881380400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Admin Link",
+            "match": {
+              "location": "stepdefenations.admin.adminLogin.admin_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1227237400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select Role",
+            "match": {
+              "location": "stepdefenations.admin.adminLogin.select_role()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3266244500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Admin super and 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "super",
+                  "offset": 6
+                },
+                {
+                  "val": "12345678",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefenations.admin.adminLogin.admin_super_and_hjdhdh(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027style_captchaContainer__LdFYB\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a361ca6d47d335182a1c2adf51b6a8c2, findElement {using\u003dxpath, value\u003d//div[@class\u003d\u0027style_captchaContainer__LdFYB\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a361ca6d47d335182a1c2adf51b6a8c2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.admin.adminLogin.enter_captcha_for_admin(adminLogin.java:53)\r\n\tat ✽.Enter Captcha for admin(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:9)\r\n",
+              "duration": 19999300,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Enter Captcha for admin",
+            "match": {
+              "location": "stepdefenations.admin.adminLogin.enter_captcha_for_admin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Click on Login for admin login",
+            "match": {
+              "location": "stepdefenations.admin.adminLogin.click_on_login_for_admin_login()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Admin"
+          },
+          {
+            "name": "@Exam_Configuarions"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:24.856Z",
+        "line": 30,
+        "name": "Reset Exam",
+        "description": "",
+        "id": "gudexams-functionality;reset-exam",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[normalize-space()\u003d\u0027End/Reset Facilities\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a361ca6d47d335182a1c2adf51b6a8c2, findElement {using\u003dxpath, value\u003d//a[normalize-space()\u003d\u0027End/Reset Facilities\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a361ca6d47d335182a1c2adf51b6a8c2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.admin.Resetexam.click_reset_exam_link(Resetexam.java:15)\r\n\tat ✽.click Reset Exam Link(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:31)\r\n",
+              "duration": 17180800,
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "click Reset Exam Link",
+            "match": {
+              "location": "stepdefenations.admin.Resetexam.click_reset_exam_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 772700,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Open Reset exam",
+            "match": {
+              "location": "stepdefenations.admin.Resetexam.open_reset_exam()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 359000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter Enrollment",
+            "match": {
+              "location": "stepdefenations.admin.Resetexam.enter_enrollment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Select Subject",
+            "match": {
+              "location": "stepdefenations.admin.Resetexam.select_subject()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Click Reset Exam",
+            "match": {
+              "location": "stepdefenations.admin.Resetexam.click_reset_exam()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Admin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:24.898Z",
+        "line": 38,
+        "name": "Allocate Exam",
+        "description": "",
+        "id": "gudexams-functionality;allocate-exam",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[normalize-space()\u003d\u0027Allocations\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a361ca6d47d335182a1c2adf51b6a8c2, findElement {using\u003dxpath, value\u003d//a[normalize-space()\u003d\u0027Allocations\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a361ca6d47d335182a1c2adf51b6a8c2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.admin.allocate_exam.click_allocation_link(allocate_exam.java:15)\r\n\tat ✽.Click Allocation Link(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:39)\r\n",
+              "duration": 18520500,
+              "status": "failed"
+            },
+            "line": 39,
+            "name": "Click Allocation Link",
+            "match": {
+              "location": "stepdefenations.admin.allocate_exam.click_allocation_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Open Student Subject Allocation",
+            "match": {
+              "location": "stepdefenations.admin.allocate_exam.open_student_subject_allocation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Enter Student Enrollment",
+            "match": {
+              "location": "stepdefenations.admin.allocate_exam.enter_student_enrollment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "Select Subject for allocation",
+            "match": {
+              "location": "stepdefenations.admin.allocate_exam.select_subject_for_allocation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "Click Allocate Exam",
+            "match": {
+              "location": "stepdefenations.admin.allocate_exam.click_allocate_exam()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Admin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:24.934Z",
+        "line": 46,
+        "name": "Gudexam Logout",
+        "description": "",
+        "id": "gudexams-functionality;gudexam-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[normalize-space()\u003d\u0027Logout\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a361ca6d47d335182a1c2adf51b6a8c2, findElement {using\u003dxpath, value\u003d//button[normalize-space()\u003d\u0027Logout\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a361ca6d47d335182a1c2adf51b6a8c2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.student.student_logout.once_successfull_login_click_logout(student_logout.java:15)\r\n\tat ✽.Once Successfull Login, Click Logout(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:47)\r\n",
+              "duration": 17000200,
+              "status": "failed"
+            },
+            "line": 47,
+            "name": "Once Successfull Login, Click Logout",
+            "match": {
+              "location": "stepdefenations.student.student_logout.once_successfull_login_click_logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Close The Browser",
+            "match": {
+              "location": "stepdefenations.student.student_logout.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:24.963Z",
+        "line": 61,
+        "name": "Gudexam Login",
+        "description": "",
+        "id": "gudexams-functionality;gudexam-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1202448800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Browser",
+            "match": {
+              "location": "stepdefenations.student.student_login.browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3714250500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Link",
+            "match": {
+              "location": "stepdefenations.student.student_login.link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3498145600,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Enter 3000532 and 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": " 3000532",
+                  "offset": 5
+                },
+                {
+                  "val": " 12345678",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefenations.student.student_login.enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027style_captchaContainer__LdFYB\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [52623be73d92752f7ac87e0edea82a25, findElement {using\u003dxpath, value\u003d//div[@class\u003d\u0027style_captchaContainer__LdFYB\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50602/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 52623be73d92752f7ac87e0edea82a25\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.student.student_login.enter_captcha(student_login.java:65)\r\n\tat ✽.Enter Captcha(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:55)\r\n",
+              "duration": 19739300,
+              "status": "failed"
+            },
+            "line": 55,
+            "name": "Enter Captcha",
+            "match": {
+              "location": "stepdefenations.student.student_login.enter_captcha()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 938300,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Check Privacy Policy",
+            "match": {
+              "location": "stepdefenations.student.student_login.check_privacy_policy()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepdefenations.student.student_login.click_on_login()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Student"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:33.419Z",
+        "line": 71,
+        "name": "Start Stduent Exam",
+        "description": "",
+        "id": "gudexams-functionality;start-stduent-exam",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027searchSubject\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [52623be73d92752f7ac87e0edea82a25, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027searchSubject\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50602/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 52623be73d92752f7ac87e0edea82a25\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.student.student_exam.search_subject_and_enter(student_exam.java:19)\r\n\tat ✽.search subject and enter(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:72)\r\n",
+              "duration": 104611400,
+              "status": "failed"
+            },
+            "line": 72,
+            "name": "search subject and enter",
+            "match": {
+              "location": "stepdefenations.student.student_exam.search_subject_and_enter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "click proceed",
+            "match": {
+              "location": "stepdefenations.student.student_exam.click_proceed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "check instructions",
+            "match": {
+              "location": "stepdefenations.student.student_exam.check_instructions()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "continue exam",
+            "match": {
+              "location": "stepdefenations.student.student_exam.continue_exam()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Student"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:33.544Z",
+        "line": 78,
+        "name": "Exam Process",
+        "description": "",
+        "id": "gudexams-functionality;exam-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: bound must be positive\r\n\tat java.base/java.util.Random.nextInt(Random.java:322)\r\n\tat stepdefenations.student.exam_process.on_exam_page_select_option_a(exam_process.java:33)\r\n\tat ✽.On Exam Page Select option and save(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:79)\r\n",
+              "duration": 3118602200,
+              "status": "failed"
+            },
+            "line": 79,
+            "name": "On Exam Page Select option and save",
+            "match": {
+              "location": "stepdefenations.student.exam_process.on_exam_page_select_option_a()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "On last question click End Exam",
+            "match": {
+              "location": "stepdefenations.student.exam_process.on_last_question_click_end_exam()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "click yes to end exam",
+            "match": {
+              "location": "stepdefenations.student.exam_process.click_yes_to_end_exam()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "click Final end exam",
+            "match": {
+              "location": "stepdefenations.student.exam_process.click_final_end_exam()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Student"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T03:35:36.679Z",
+        "line": 85,
+        "name": "Gudexam Logout",
+        "description": "",
+        "id": "gudexams-functionality;gudexam-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[normalize-space()\u003d\u0027Logout\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AFO4I6I2\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [52623be73d92752f7ac87e0edea82a25, findElement {using\u003dxpath, value\u003d//button[normalize-space()\u003d\u0027Logout\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\\Users\\shrad\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50602/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 52623be73d92752f7ac87e0edea82a25\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepdefenations.student.student_logout.once_successfull_login_click_logout(student_logout.java:15)\r\n\tat ✽.Once Successfull Login, Click Logout(file:///C:/Users/shrad/.eclipse/Cucumber/src/test/resources/Features/login.feature:86)\r\n",
+              "duration": 25710400,
+              "status": "failed"
+            },
+            "line": 86,
+            "name": "Once Successfull Login, Click Logout",
+            "match": {
+              "location": "stepdefenations.student.student_logout.once_successfull_login_click_logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "Close The Browser",
+            "match": {
+              "location": "stepdefenations.student.student_logout.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Gudexams Functionality",
+    "description": "",
+    "id": "gudexams-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]
